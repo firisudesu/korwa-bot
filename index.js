@@ -19,6 +19,8 @@ bot.on('message', message => {
 
 bot.on('ready', () => {
     console.log('YAAAY!');
+    client.user.setGame('with firis in the bed');
 });
+
 
 bot.login(process.env.BOT_TOKEN);
