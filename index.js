@@ -5,7 +5,7 @@ const prefix = '!';
 
 bot.on('message', message => {
 
-    let msg = message.content.toUpperCase();
+    let msg = message.content.toLowerCase();
     let sender = message.author;
     let cont = message.content.slice(prefix.length).split(" ");
     let args = cont.slice(1);
