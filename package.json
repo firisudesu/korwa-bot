@@ -4,7 +4,7 @@
   "description": "muh lovely nokorwa bot",
   "main": "index.js",
   "scripts": {
-    "test": "!help"
+     "start": "node bot.js"
   },
   "repository": {
     "type": "git",
