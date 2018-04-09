@@ -2,13 +2,13 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-	console.log('Ready!');
+    console.log('I am ready!');
 });
 
 client.on('message', message => {
-	if (message.content === '!ping') {
-		message.channel.send('<3 firis');
-	}
+    if (message.content === 'ping') {
+    	message.reply('<3');
+  	}
 });
 
 // THIS  MUST  BE  THIS  WAY
