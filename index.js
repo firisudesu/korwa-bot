@@ -19,7 +19,7 @@ bot.on('message', message => {
 
 bot.on('ready', () => {
     console.log('YAAAY!');
-    client.user.setGame('with firis in the bed');
+    bot.user.setGame('with firis in the bed');
 });
 
 
