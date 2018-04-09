@@ -1,15 +1,24 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
+const prefix = '!';
+
+bot.on('message', message => {
+
+    let msg = message.content.toUpperCase();
+    let sender = message.author;
+    let cont = message.content.slice(prefix.length).split(" ");
+    let args = cont.slice(1);
+
+    if (msg === prefix + 'korwa') {
+        message.channel.send('<3 firisu desu');
+        return;
+    }
+
 });
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('<3');
-  	}
+bot.on('ready', () => {
+    console.log('YAAAY!');
 });
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
