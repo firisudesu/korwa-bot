@@ -13,11 +13,12 @@ bot.on('message', message => {
     if (msg === prefix + 'korwa') {
         message.channel.send('<3 firisu desu');
         return;
-        
-    if (msg === prefix + 'korwa' + 'set roles') {
+    }
+    
+    if (msg === prefix + 'korwa set roles') {
         message.channel.send('just go to the bot stuff channel \n type (.)iam "scrubs" \n list roles : \n MagnaRaid, 6manHL,UbahaHL');
         return;
-}
+
     }
 
 });
