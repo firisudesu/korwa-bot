@@ -1,0 +1,22 @@
+{
+  "name": "nokorwa-bot",
+  "version": "1.0.0",
+  "description": "muh lovely nokorwa bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "!help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firisudesu/korwa-bot.git"
+  },
+  "keywords": [
+    "korwa"
+  ],
+  "author": "firisudesu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/firisudesu/korwa-bot/issues"
+  },
+  "homepage": "https://github.com/firisudesu/korwa-bot#readme"
+}
